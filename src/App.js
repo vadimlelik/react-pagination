@@ -10,15 +10,18 @@ function App() {
 
 
     // const [page, setPage] = useState(1);
-    const [notes, setNotes] = useLocalStorage('NOTES', [{id:12,}])
+    const [notes, setNotes] = useLocalStorage('NOTES', [])
 
-    useEffect(()=>{
-        setNotes(prevNotes=>{
-            return [
-                ...notes, {id: 123, name: 'Vadim'}
-            ]
-        })
-    },[])
+
+    // useEffect(()=>{
+    //     setNotes(prevNotes=>{
+    //         return [
+    //             ...notes, {id: 123, name: 'Vadim'}
+    //         ]
+    //     })
+    // },[])
+
+    console.log(notes)
 
     const perPage = 20;
     const {currentPage, maxPage, currentData, next, jump, setCurrentPage} = usePagination(data, perPage);

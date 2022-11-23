@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  //display: flex;
+}
+.input__group{
+  display: flex;
+  flex-direction: column;
+}
+input{
+  margin-top:10px ;
+  padding: 8px;
+  border: 2px solid #61dafb;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #5d677c;
+}
+label{
+  margin-top:10px ;
+}
+.form{
+
+}
