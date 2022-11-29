@@ -12,7 +12,6 @@ const AddForm = () => {
             ...prevState, [target.name]: target.value
         }))
     }
-
     const handleSubmit = (e) => {
         e.preventDefault()
         setUser((prevState)=>{
@@ -21,9 +20,6 @@ const AddForm = () => {
         setData({})
 
     }
-
-    console.log(data)
-
     return <div className={styles.wrapper}>
         <div className={styles.container}>
             <h1>Add form</h1>
