@@ -7,7 +7,6 @@ const Reducer = () => {
     const [state, dispatch] = useReducer(reducer, [])
 
     console.log(state, 'state')
-    console.log(data, 'data')
 
     const handleChange = (e) => {
         e.preventDefault()
@@ -17,16 +16,16 @@ const Reducer = () => {
     const handleSubmit = (e) => {
         e.preventDefault()
         dispatch({
-            type: 'add', payload: {
+            type: 'add',
+            payload: {
                 title: data
             }
         })
-        setData('')
     }
     return (<>
         <span>Reducer</span>
         <form onSubmit={handleSubmit}>
-            <input type='text' value={data||''} onChange={handleChange}/>
+            <input type='text' value={data || ''} onChange={handleChange}/>
             <button>Отправить</button>
         </form>
 
